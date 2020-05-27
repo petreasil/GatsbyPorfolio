@@ -1,0 +1,32 @@
+.banner h1 {
+  text-transform: uppercase;
+  color: var(--clr-white);
+  text-align: center;
+  letter-spacing: 0.5rem;
+  /*background-color: var(--clr-grey-5);*/
+  line-height: 1.25;
+}
+
+.icons {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  font-size: 3rem;
+  margin: 0 0.4rem;
+  transition: var(--transition);
+}
+.icon:hover {
+  transform: translateY(-10%);
+}
+.info {
+  margin: 0.5rem 0;
+}
+.link {
+  display: inline-block;
+  color: var(--clr-primary);
+  margin-left: 0.2rem;
+  transition: var(--transition);
+  text-decoration: underline;
+}
