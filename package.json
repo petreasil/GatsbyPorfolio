@@ -44,6 +44,12 @@
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
