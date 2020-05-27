@@ -1,18 +1,32 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .course {
   border-radius: var(--radius);
   background: var(--clr-white);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   height: 100%;
 }
 .course:hover {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
   transform: scale(1.02);
 }
 
 .course img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .container {
@@ -50,6 +64,8 @@
   color: var(--clr-grey-5);
 }
 .course {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: auto 1fr;
   grid-template-rows: auto 1fr;
 }

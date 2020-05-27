@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .footer {
   text-align: center;
   padding: 2rem;
@@ -6,15 +13,23 @@
 }
 .icons {
   margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .icon {
   font-size: 2rem;
   margin: 0 0.4rem;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
 }
 .icon:hover {
+  -webkit-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
   transform: translateY(-10%);
 }
 .info {
@@ -24,6 +39,8 @@
   display: inline-block;
   color: var(--clr-primary);
   margin-left: 0.2rem;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   text-decoration: underline;
 }
